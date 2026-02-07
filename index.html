@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 秦海江</title>
+    <style>
+        /* 全局样式：简洁专业，适合简历 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+            display: block;
+            background-color: #e0e0e0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #1a2a6c;
+            border-bottom: 2px solid #1a2a6c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .resume-item {
+            margin-bottom: 25px;
+        }
+        .resume-item h3 {
+            color: #b21f1f;
+            font-size: 1.4rem;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #e9ecef;
+            color: #495057;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #1a2a6c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            border: none;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background: #0d1a4d;
+        }
+        .btn-download {
+            background: #b21f1f;
+        }
+        .btn-download:hover {
+            background: #8a1717;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 20px 15px;
+            }
+        }
+        /* 隐藏内容初始状态 */
+        #more-experience {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://bailian-bmp-pre.oss-cn-hangzhou.aliyuncs.com/public/system_agent/PlaceHolder.png" alt="个人头像" class="profile-img">
+        <h1>秦海江</h1>
+        <p class="tagline">全栈开发工程师 | 5年Web开发经验 | 专注用户体验与高效代码</p>
+    </header>
+
+    <section>
+        <h2>关于我</h2>
+        <p>资深软件工程师，擅长前端框架（React/Vue）和后端技术（Node.js/Python）。热爱开源项目，注重代码质量和可维护性。曾主导多个高流量Web应用开发，追求技术与设计的完美结合。</p>
+    </section>
+
+    <section>
+        <h2>教育背景</h2>
+        <div class="resume-item">
+            <h3>浙江大学 - 计算机科学与技术</h3>
+            <p class="date">2015年9月 - 2019年6月 | 学士学位</p>
+            <ul>
+                <li>主修课程：数据结构、算法设计、Web开发、数据库系统</li>
+                <li>荣誉：校级优秀毕业生，ACM程序设计竞赛省级二等奖</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>工作经验</h2>
+        <div class="resume-item">
+            <h3>高级前端工程师 - 阿里巴巴集团</h3>
+            <p class="date">2021年3月 - 至今</p>
+            <ul>
+                <li>负责核心电商平台前端架构，日均处理1000万+用户请求</li>
+                <li>主导React微前端项目，提升团队开发效率40%</li>
+                <li>优化首屏加载时间至1.2秒内，用户体验评分提升25%</li>
+            </ul>
+        </div>
+        <div class="resume-item" id="more-experience">
+            <h3>前端开发工程师 - 腾讯科技</h3>
+            <p class="date">2019年7月 - 2021年2月</p>
+            <ul>
+                <li>开发微信小程序生态工具链，支持500+企业客户</li>
+                <li>实现自动化测试框架，减少回归测试时间60%</li>
+                <li>参与开源项目TDesign，贡献3000+行代码</li>
+            </ul>
+        </div>
+        <button id="toggleExperience" class="btn">显示更多工作经历</button>
+    </section>
+
+    <section>
+        <h2>技能</h2>
+        <div class="skills-container">
+            <span class="skill-tag">JavaScript/TypeScript</span>
+            <span class="skill-tag">React/Vue</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML5/CSS3</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">AWS</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>联系方式</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <a href="mailto:contact@haijiangqin.com" style="color: #1a2a6c;">contact@haijiangqin.com</a>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <span>+86 138 0013 8000</span>
+            </div>
+            <div class="contact-item">
+                <span>🔗</span>
+                <a href="https://github.com/haijiangqin" target="_blank" style="color: #1a2a6c;">GitHub</a>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <span>中国·杭州</span>
+            </div>
+        </div>
+        <a href="resume.pdf" class="btn btn-download" id="downloadResume">下载PDF简历</a>
+        <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">（点击下载后，替换为您的实际PDF文件）</p>
+    </section>
+
+    <footer>
+        <p>© 2023 秦海江的个人网站 | 域名: haijiangqin.com | GitHub Pages 部署</p>
+        <p>设计简洁高效，适配所有设备</p>
+    </footer>
+
+    <script>
+        // 事件绑定：使用 addEventListener 实现交互
+        document.addEventListener('DOMContentLoaded', function() {
+            // 工作经历切换按钮
+            const toggleBtn = document.getElementById('toggleExperience');
+            const moreExperience = document.getElementById('more-experience');
+            
+            toggleBtn.addEventListener('click', function() {
+                if (moreExperience.style.display === 'none' || !moreExperience.style.display) {
+                    moreExperience.style.display = 'block';
+                    toggleBtn.textContent = '隐藏额外工作经历';
+                } else {
+                    moreExperience.style.display = 'none';
+                    toggleBtn.textContent = '显示更多工作经历';
+                }
+            });
+
+            // 下载简历按钮（添加简单反馈）
+            const downloadBtn = document.getElementById('downloadResume');
+            downloadBtn.addEventListener('click', function(e) {
+                // 实际部署时，确保 resume.pdf 存在；此处仅演示事件绑定
+                console.log('简历下载触发 - 请替换为实际PDF文件');
+                // 如需自定义逻辑（如统计下载次数），可在此添加
+            });
+        });
+    </script>
+</body>
+</html>
